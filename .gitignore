@@ -1,0 +1,6 @@
+.venv
+*.pyc
+builds/**/src
+builds/**/pkg
+*.deb
+*.pkg.tar
