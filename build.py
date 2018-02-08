@@ -53,4 +53,3 @@ with open('%s/PKGBUILD' % build_path, 'w') as handler:
 
 subprocess.run('makepkg --printsrcinfo > .SRCINFO',
                shell=True, cwd=build_path)
-
