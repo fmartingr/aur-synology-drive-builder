@@ -7,9 +7,10 @@ from jinja2 import Environment, FileSystemLoader
 import requests
 
 
-version = sys.argv[1]
-build_number = sys.argv[2]
+version = os.environ.get('VERSION')
+build_number = os.environ.get('BUILD_NUMBER')
 
+print(f'Building {version}-{build_number}')
 
 def md5sum(url):
     response = requests.get(url, stream=True)
