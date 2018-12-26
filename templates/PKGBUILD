@@ -21,9 +21,10 @@ md5sums_x86_64=('{{ md5sum_x86_64 }}')
 
 prepare() {
 	cd "$srcdir"
-	mkdir control data
+	mkdir -p data
 	ar x synology-drive-*
-	tar xf data.tar.gz --directory data
+	xz -d data.tar.xz
+	tar xf data.tar --directory data
 }
 
 package() {
