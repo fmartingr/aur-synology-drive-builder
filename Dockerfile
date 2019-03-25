@@ -1,4 +1,4 @@
-FROM base/archlinux:latest
+FROM archlinux/base:latest
 LABEL MAINTAINER "Felipe Martin <me@fmartingr.com>"
 
 RUN pacman -Syu --noconfirm python python-jinja python-requests base-devel && \
