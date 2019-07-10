@@ -26,9 +26,8 @@ context = {
     'description': 'Drive for PC, the desktop utility of the DSM add-on package, Drive, allows you to sync and share files owned by you or shared by others between a centralized Synology NAS and multiple client computers.',
 }
 build_path = 'builds/{version}-{build_number}'.format(**context)
-source_i686 = 'https://global.download.synology.com/download/Tools/SynologyDriveClient/{version}-{build_number}/Ubuntu/Installer/i686/synology-drive-{build_number}.i686.deb'.format(**context)
-source_x86_64 = 'https://global.download.synology.com/download/Tools/SynologyDriveClient/{version}-{build_number}/Ubuntu/Installer/x86_64/synology-drive-{build_number}.x86_64.deb'.format(**context)
-
+source_i686 = 'https://global.download.synology.com/download/Tools/SynologyDriveClient/{version}-{build_number}/Ubuntu/Installer/i686/synology-drive-client-{build_number}.i686.deb'.format(**context)
+source_x86_64 = 'https://global.download.synology.com/download/Tools/SynologyDriveClient/{version}-{build_number}/Ubuntu/Installer/x86_64/synology-drive-client-{build_number}.x86_64.deb'.format(**context)
 
 context.update({
     'source_i686': source_i686,
@@ -54,4 +53,3 @@ with open('%s/PKGBUILD' % build_path, 'w') as handler:
 
 subprocess.run('makepkg --printsrcinfo > .SRCINFO',
                shell=True, cwd=build_path)
-
