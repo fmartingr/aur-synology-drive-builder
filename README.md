@@ -1,3 +1,5 @@
+# ARCHIVED. MY AUR PACKAGES HAVE BEEN MOVED TO: https://github.com/fmartingr/aur-packages
+
 # AUR Synology Drive Builder
 
 [![AUR Synology Drive](https://img.shields.io/badge/AUR-synology--drive-green.svg)](https://aur.archlinux.org/packages/synology-drive/)
