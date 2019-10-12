@@ -1,4 +1,4 @@
-# ARCHIVED. MY AUR PACKAGES HAVE BEEN MOVED TO: https://github.com/fmartingr/aur-packages
+# ARCHIVED. MY AUR PACKAGES HAVE BEEN MOVED TO: https://gitlab.com/fmartingr/aur-packages
 
 # AUR Synology Drive Builder
 
